@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MyDay">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:text="My Day"
+        android:textAllCaps="true"
+        android:textColor="#36FBE5"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="598dp"
+        android:background="#555353">
+        <ImageView
+            android:id="@+id/imgadd"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/add"/>
+        <TextView
+            android:id="@+id/btnaddtask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="-12dp"
+            android:layout_toRightOf="@+id/imgadd"
+            android:text="Add Tasks"
+            android:textSize="25dp"
+            android:textColor="#36FBE5"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgRemindme"
+            android:layout_width="80dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/Remind"/>
+        <TextView
+            android:id="@+id/btnRemindme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_toRightOf="@+id/imgRemindme"
+            android:layout_below="@+id/btnaddtask"
+            android:text="Remind Me"
+            android:textSize="25dp"
+            android:textColor="#36FBE5"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/imgDuedate"
+            android:layout_width="47dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/duedate"/>
+        <TextView
+            android:id="@+id/btnDuedate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgDuedate"
+            android:layout_below="@+id/btnRemindme"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="15dp"
+            android:text="Add Due Date "
+            android:textSize="25dp"
+            android:textColor="#36FBE5"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgRepeat"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/reapet"/>
+        <TextView
+            android:id="@+id/btnReapet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgRepeat"
+            android:layout_below="@+id/btnDuedate"
+            android:layout_marginTop="67dp"
+            android:layout_marginLeft="-6dp"
+            android:text="Reapet"
+            android:textSize="25dp"
+            android:textColor="#36FBE5"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgSetlocation"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/setlocation"/>
+        <TextView
+            android:id="@+id/btnSetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgSetlocation"
+            android:layout_below="@+id/btnReapet"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="3dp"
+            android:text="Set Location"
+            android:textSize="25dp"
+            android:textColor="#36FBE5"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>
