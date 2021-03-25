@@ -40,6 +40,17 @@ public class SecondActivity extends AppCompatActivity {
         });
 
 
+        //Launch Registration screen when Register Button is clicked
+        etMyday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SecondActivity.this, MyDay.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+
 
 
     }
