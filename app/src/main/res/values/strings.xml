@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">seminar</string>
+    <string name="map_key" translatable="false">
+        AIzaSyDc-CZwYwlem8ubPokBxHl_WXlIXBq62Qs</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="register">Register</string>

@@ -145,8 +145,7 @@ public class LoginActivity extends AppCompatActivity {
                         pDialog.dismiss();
 
                         //Display error message whenever an error occurs
-                        Toast.makeText(getApplicationContext(),
-                                error.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
                 });
@@ -169,13 +168,23 @@ public class LoginActivity extends AppCompatActivity {
             etUsername.setError("Please Enter Valid email address");
             etUsername.requestFocus();
             return false;
-        }if (KEY_EMPTY.equals(password)) {
+        }
+        if (KEY_EMPTY.equals(password)) {
             etPassword.setError("Password cannot be empty");
             etPassword.requestFocus();
 
+       /* } else {
+           // Toast.makeText(getApplicationContext(), "Invalid username or password ", Toast.LENGTH_LONG).show();
+             emptyInputEditText();*/
         }
         return true;
     }
+
+
+   /* private void emptyInputEditText() {
+        etUsername.setText(null);
+        etPassword.setText(null);
+    }*/
 
     private void closeKeyboard() {
         View view = this.getCurrentFocus();
@@ -185,3 +194,4 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 }
+
